@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html class="js jetpack-lazy-images-js-enabled csspointerevents no-touchevents mediaqueries" lang="en-US">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <title>Deri – The Derivative Exchange Protocol</title>
+    <link rel="stylesheet" id="formidable-css" href="./static/css/formidableforms.css" type="text/css" media="all">
+    <link rel="stylesheet" id="themo-icons-css" href="./static/css/icons.css" type="text/css" media="all">
+    <link rel="stylesheet" id="wp-block-library-css" href="./static/css/style.css" type="text/css" media="all">
+    <style id="wp-block-library-inline-css" type="text/css">
+        .has-text-align-justify {
+            text-align: justify;
+        }
+    </style>
+    <link rel="stylesheet" id="jetpack-layout-grid-css" href="./static/css/style(1).css" type="text/css" media="all">
+    <link rel="stylesheet" id="groovy-menu-style-css" href="./static/css/frontend.css" type="text/css" media="all">
+    <link rel="stylesheet" id="groovy-menu-style-fonts-groovy-28328-css" href="./static/css/groovy-28328.css"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="groovy-menu-style-fonts-groovy-69018-css" href="./static/css/groovy-69018.css"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="groovy-menu-style-fonts-groovy-socicon-css" href="./static/css/groovy-socicon.css"
+        type="text/css" media="all">
+    <style id="global-styles-inline-css" type="text/css">
+        :root {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 13;
+            --wp--preset--font-size--normal: 16;
+            --wp--preset--font-size--medium: 20;
+            --wp--preset--font-size--large: 36;
+            --wp--preset--font-size--huge: 42;
+            --wp--preset--font-style--normal: normal;
+            --wp--preset--font-style--italic: italic;
+            --wp--preset--font-weight--100: 100;
+            --wp--preset--font-weight--200: 200;
+            --wp--preset--font-weight--300: 300;
+            --wp--preset--font-weight--400: 400;
+            --wp--preset--font-weight--500: 500;
+            --wp--preset--font-weight--600: 600;
+            --wp--preset--font-weight--700: 700;
+            --wp--preset--font-weight--800: 800;
+            --wp--preset--font-weight--900: 900;
+            --wp--preset--text-decoration--underline: underline;
+            --wp--preset--text-decoration--strikethrough: line-through;
+            --wp--preset--text-transform--uppercase: uppercase;
+            --wp--preset--text-transform--lowercase: lowercase;
+            --wp--preset--text-transform--capitalize: capitalize;
+        }
+    </style>
+    <link rel="stylesheet" id="rs-plugin-settings-css" href="./static/css/rs6.css" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-icons-css" href="./static/css/elementor-icons.min.css" type="text/css"
+        media="all">
+    <link rel="stylesheet" id="elementor-animations-css" href="./static/css/animations.min.css" type="text/css"
+        media="all">
+    <link rel="stylesheet" id="elementor-frontend-legacy-css" href="./static/css/frontend-legacy.min.css"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-frontend-css" href="./static/css/frontend.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-post-622-css" href="./static/css/post-622.css" type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-5-all-css" href="./static/css/all.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-post-105-css" href="./static/css/post-105.css" type="text/css" media="all">
+    <link rel="stylesheet" id="ms-main-css" href="./static/css/masterslider.main.css" type="text/css" media="all">
+    <link rel="stylesheet" id="ms-custom-css" href="./static/css/custom.css" type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-css" href="./static/css/font-awesome.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="groovy-menu-preset-style-54-css" href="./static/css/preset_54.css" type="text/css"
+        media="all">
+    <link rel="stylesheet" id="roots_app-css" href="./static/css/app.css" type="text/css" media="all">
+    <style id="jetpack-global-styles-frontend-style-inline-css" type="text/css">
+        :root {
+            --font-headings: unset;
+            --font-base: unset;
+            --font-headings-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            --font-base-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" id="jetpack_css-css" href="./static/css/jetpack.css" type="text/css" media="all">
+    <!-- <script type="text/javascript" src="./static/js/web/elementor-widgets.js" -->
+        id="masterslider-elementor-widgets-js"></script>
+    <!-- <script type="text/javascript" src="./static/js/web/rbtools.min.js" id="tp-tools-js"></script> -->
+    <!-- <script type="text/javascript" src="./static/js/web/rs6.min.js" id="revmin-js"></script> -->
+    <!-- <script type="text/javascript" src="./static/js/web/v4-shims.min.js" id="font-awesome-4-shim-js"></script> -->
+    <link rel="shortlink" href="https://wp.me/PbC1h7-1H">
+    <script>
+        var ms_grabbing_curosr = '',
+            ms_grab_curosr = '';
+    </script>
+    <meta name="generator" content="MasterSlider 3.2.14 - Responsive Touch Image Slider">
+    <style type="text/css">
+        img#wpstats {
+            display: none
+        }
+    </style>
+   
+    <style type="text/css">
+        /* If html does not have either class, do not show lazy loaded images. */
+        html:not(.jetpack-lazy-images-js-enabled):not(.js) .jetpack-lazy-image {
+            display: none;
+        }
+    </style>
+    <script>
+        document.documentElement.classList.add(
+            'jetpack-lazy-images-js-enabled'
+        );
+    </script>
+    <!-- There is no amphtml version available for this URL. -->
+    <meta name="generator"
+        content="Powered by Slider Revolution 6.2.2 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+    <!-- End Jetpack Open Graph Tags -->
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="favicon.ico" sizes="192x192">
+    <link rel="apple-touch-icon" href="favicon.ico">
+    <meta name="msapplication-TileImage" content="favicon.ico">
+
+    <style type="text/css" id="wp-custom-css">
+        .footer .widget {
+            text-align: center;
+
+        }
+
+        .fa.fa-defipulse::before {
+            content: url("https://balancer.finance/wp-content/uploads/2020/07/defi-pulse.png");
+        }
+
+        .soc-widget a {
+            margin-left: 40px;
+        }
+
+        .soc-widget i,
+        .soc-widget a i.fa-defipulse {
+            vertical-align: top;
+        }
+
+        .elementor-invisible {
+            visibility: inherit !important;
+        }
+    </style>
+
+    <style id="kirki-inline-styles">
+        #logo img {
+            max-height: 30px;
+            width: auto;
+        }
+
+        .navbar .navbar-nav {
+            margin-top: 15px;
+        }
+
+        .navbar .navbar-toggle {
+            top: 15px;
+        }
+
+        .themo_cart_icon {
+            margin-top: calc(15px + 12px);
+        }
+
+        .btn-cta-primary,
+        .navbar .navbar-nav>li>a:hover:after,
+        .navbar .navbar-nav>li.active>a:after,
+        .navbar .navbar-nav>li.active>a:hover:after,
+        .navbar .navbar-nav>li.active>a:focus:after,
+        form input[type=submit],
+        html .woocommerce a.button.alt,
+        html .woocommerce-page a.button.alt,
+        html .woocommerce a.button,
+        html .woocommerce-page a.button,
+        .woocommerce #respond input#submit.alt:hover,
+        .woocommerce a.button.alt:hover,
+        .woocommerce #respond input#submit.alt,
+        .woocommerce button.button.alt,
+        .woocommerce input.button.alt,
+        .woocommerce button.button.alt:hover,
+        .woocommerce input.button.alt:hover,
+        .woocommerce #respond input#submit.disabled,
+        .woocommerce #respond input#submit:disabled,
+        .woocommerce #respond input#submit:disabled[disabled],
+        .woocommerce a.button.disabled,
+        .woocommerce a.button:disabled,
+        .woocommerce a.button:disabled[disabled],
+        .woocommerce button.button.disabled,
+        .woocommerce button.button:disabled,
+        .woocommerce button.button:disabled[disabled],
+        .woocommerce input.button.disabled,
+        .woocommerce input.button:disabled,
+        .woocommerce input.button:disabled[disabled],
+        .woocommerce #respond input#submit.disabled:hover,
+        .woocommerce #respond input#submit:disabled:hover,
+        .woocommerce #respond input#submit:disabled[disabled]:hover,
+        .woocommerce a.button.disabled:hover,
+        .woocommerce a.button:disabled:hover,
+        .woocommerce a.button:disabled[disabled]:hover,
+        .woocommerce button.button.disabled:hover,
+        .woocommerce button.button:disabled:hover,
+        .woocommerce button.button:disabled[disabled]:hover,
+        .woocommerce input.button.disabled:hover,
+        .woocommerce input.button:disabled:hover,
+        .woocommerce input.button:disabled[disabled]:hover,
+        .woocommerce #respond input#submit.alt.disabled,
+        .woocommerce #respond input#submit.alt.disabled:hover,
+        .woocommerce #respond input#submit.alt:disabled,
+        .woocommerce #respond input#submit.alt:disabled:hover,
+        .woocommerce #respond input#submit.alt:disabled[disabled],
+        .woocommerce #respond input#submit.alt:disabled[disabled]:hover,
+        .woocommerce a.button.alt.disabled,
+        .woocommerce a.button.alt.disabled:hover,
+        .woocommerce a.button.alt:disabled,
+        .woocommerce a.button.alt:disabled:hover,
+        .woocommerce a.button.alt:disabled[disabled],
+        .woocommerce a.button.alt:disabled[disabled]:hover,
+        .woocommerce button.button.alt.disabled,
+        .woocommerce button.button.alt.disabled:hover,
+        .woocommerce button.button.alt:disabled,
+        .woocommerce button.button.alt:disabled:hover,
+        .woocommerce button.button.alt:disabled[disabled],
+        .woocommerce button.button.alt:disabled[disabled]:hover,
+        .woocommerce input.button.alt.disabled,
+        .woocommerce input.button.alt.disabled:hover,
+        .woocommerce input.button.alt:disabled,
+        .woocommerce input.button.alt:disabled:hover,
+        .woocommerce input.button.alt:disabled[disabled],
+        .woocommerce input.button.alt:disabled[disabled]:hover,
+        p.demo_store,
+        .woocommerce.widget_price_filter .ui-slider .ui-slider-handle,
+        .th-conversion form input[type=submit],
+        .th-conversion .with_frm_style input[type=submit],
+        .th-pricing-column.th-highlight,
+        .search-submit,
+        .search-submit:hover,
+        .widget .tagcloud a:hover,
+        .footer .tagcloud a:hover,
+        .btn-standard-primary-form form .frm_submit input[type=submit],
+        .btn-standard-primary-form form .frm_submit input[type=submit]:hover,
+        .btn-ghost-primary-form form .frm_submit input[type=submit]:hover,
+        .btn-cta-primary-form form .frm_submit input[type=submit],
+        .btn-cta-primary-form form .frm_submit input[type=submit]:hover,
+        .th-widget-area form input[type=submit],
+        .th-widget-area .with_frm_style .frm_submit input[type=submit],
+        .elementor-widget-themo-header.elementor-view-stacked .th-header-wrap .elementor-icon,
+        .elementor-widget-themo-service-block.elementor-view-stacked .th-service-block-w .elementor-icon {
+            background-color: #045089;
+        }
+
+        a,
+        .accent,
+        .navbar .navbar-nav .dropdown-menu li.active a,
+        .navbar .navbar-nav .dropdown-menu li a:hover,
+        .navbar .navbar-nav .dropdown-menu li.active a:hover,
+        .page-title h1,
+        .inner-container>h1.entry-title,
+        .woocommerce ul.products li.product .price,
+        .woocommerce ul.products li.product .price del,
+        .woocommerce .single-product .product .price,
+        .woocommerce.single-product .product .price,
+        .woocommerce .single-product .product .price ins,
+        .woocommerce.single-product .product .price ins,
+        .a2c-ghost.woocommerce a.button,
+        .th-cta .th-cta-text span,
+        .elementor-widget-themo-info-card .th-info-card-wrap .elementor-icon-box-title,
+        .map-info h3,
+        .th-pkg-content h3,
+        .th-pricing-cost,
+        #main-flex-slider .slides h1,
+        .th-team-member-social a i:hover,
+        .elementor-widget-toggle .elementor-toggle .elementor-toggle-title,
+        .elementor-widget-toggle .elementor-toggle .elementor-toggle-title.active,
+        .elementor-widget-toggle .elementor-toggle .elementor-toggle-icon,
+        .elementor-widget-themo-header .th-header-wrap .elementor-icon,
+        .elementor-widget-themo-header.elementor-view-default .th-header-wrap .elementor-icon,
+        .elementor-widget-themo-service-block .th-service-block-w .elementor-icon,
+        .elementor-widget-themo-service-block.elementor-view-default .th-service-block-w .elementor-icon,
+        .elementor-widget-themo-header.elementor-view-framed .th-header-wrap .elementor-icon,
+        .elementor-widget-themo-service-block.elementor-view-framed .th-service-block-w .elementor-icon {
+            color: #045089;
+        }
+
+        .btn-standard-primary,
+        .btn-ghost-primary:hover,
+        .pager li>a:hover,
+        .pager li>span:hover,
+        .a2c-ghost.woocommerce a.button:hover {
+            background-color: #045089;
+        }
+
+        .btn-standard-primary,
+        .btn-ghost-primary:hover,
+        .pager li>a:hover,
+        .pager li>span:hover,
+        .a2c-ghost.woocommerce a.button:hover,
+        .btn-standard-primary-form form .frm_submit input[type=submit],
+        .btn-standard-primary-form form .frm_submit input[type=submit]:hover,
+        .btn-ghost-primary-form form .frm_submit input[type=submit]:hover,
+        .btn-ghost-primary-form form .frm_submit input[type=submit] {
+            border-color: #045089;
+        }
+
+        .btn-ghost-primary,
+        .th-portfolio-filters a.current,
+        .a2c-ghost.woocommerce a.button,
+        .btn-ghost-primary-form form .frm_submit input[type=submit] {
+            color: #045089;
+        }
+
+        .btn-ghost-primary,
+        .th-portfolio-filters a.current,
+        .a2c-ghost.woocommerce a.button,
+        .elementor-widget-themo-header.elementor-view-framed .th-header-wrap .elementor-icon,
+        .elementor-widget-themo-service-block.elementor-view-framed .th-service-block-w .elementor-icon {
+            border-color: #045089;
+        }
+
+        form select:focus,
+        form textarea:focus,
+        form input:focus,
+        .th-widget-area .widget select:focus,
+        .search-form input:focus {
+            border-color: #045089 !important;
+        }
+
+        .btn-cta-accent,
+        .a2c-cta.woocommerce a.button,
+        .a2c-cta.woocommerce a.button:hover,
+        .btn-standard-accent-form form .frm_submit input[type=submit],
+        .btn-standard-accent-form form .frm_submit input[type=submit]:hover,
+        .btn-ghost-accent-form form .frm_submit input[type=submit]:hover,
+        .btn-cta-accent-form form .frm_submit input[type=submit],
+        .btn-cta-accent-form form .frm_submit input[type=submit]:hover {
+            background-color: #f96d64;
+        }
+
+        body #booked-profile-page input[type=submit].button-primary,
+        body table.booked-calendar input[type=submit].button-primary,
+        body .booked-modal input[type=submit].button-primary,
+        body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,
+        body #booked-profile-page .booked-profile-appt-list .appt-block.approved .status-block {
+            background: #f96d64 !important;
+        }
+
+        body #booked-profile-page input[type=submit].button-primary,
+        body table.booked-calendar input[type=submit].button-primary,
+        body .booked-modal input[type=submit].button-primary,
+        body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,
+        .btn-standard-accent-form form .frm_submit input[type=submit],
+        .btn-standard-accent-form form .frm_submit input[type=submit]:hover,
+        .btn-ghost-accent-form form .frm_submit input[type=submit]:hover,
+        .btn-ghost-accent-form form .frm_submit input[type=submit] {
+            border-color: #f96d64 !important;
+        }
+
+        .btn-standard-accent,
+        .btn-ghost-accent:hover {
+            background-color: #f96d64;
+            border-color: #f96d64;
+        }
+
+        .btn-ghost-accent,
+        .btn-ghost-accent-form form .frm_submit input[type=submit] {
+            color: #f96d64;
+        }
+
+        .btn-ghost-accent {
+            border-color: #f96d64;
+        }
+
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Lato;
+            font-weight: 400;
+        }
+
+        body,
+        p,
+        li {
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.65;
+            color: #333333;
+        }
+
+        .navbar .navbar-nav>li>a,
+        .navbar .navbar-nav>li>a:hover,
+        .navbar .navbar-nav>li.active>a,
+        .navbar .navbar-nav>li.active>a:hover,
+        .navbar .navbar-nav>li.active>a:focus,
+        .navbar .navbar-nav>li.th-accent {
+            font-family: Lato;
+            font-size: 15px;
+            font-weight: 400;
+            color: #333333;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://balancer.finance/wp-content/fonts/lato/S6u9w4BMUTPHh7USSwaPHw3q5d0N7w.woff) format('woff');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://balancer.finance/wp-content/fonts/lato/S6u9w4BMUTPHh7USSwiPHw3q5d0.woff) format('woff');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://balancer.finance/wp-content/fonts/lato/S6uyw4BMUTPHjxAwWCWtFCfQ7A.woff) format('woff');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://balancer.finance/wp-content/fonts/lato/S6uyw4BMUTPHjx4wWCWtFCc.woff) format('woff');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://balancer.finance/wp-content/fonts/lato/S6u9w4BMUTPHh6UVSwaPHw3q5d0N7w.woff) format('woff');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://balancer.finance/wp-content/fonts/lato/S6u9w4BMUTPHh6UVSwiPHw3q5d0.woff) format('woff');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+    </style>
+    <style>
+        .cardm {
+            background-color: #1E49D3;
+            border-radius: 30px 0 30px 0;
+            width: 25rem;
+            /* background-image: url('./static/img/supit.png'); */
+            position: relative;
+        }
+
+        .elementor-105 .elementor-element.elementor-element-1f3dbcb6.elementor-column.elementor-element[data-element_type="column"]>.elementor-column-wrap.elementor-element-populated>.elementor-widget-wrap {
+            align-content: inherit;
+            align-items: inherit
+        }
+
+        .left_top {
+            width: 15rem;
+            height: 12.5rem;
+            display: inline-block;
+            position: relative;
+            background-image: url(./static/img/lefttop.png);
+        }
+
+        .right_top {
+            width: 6.8rem;
+            height: 5.2rem;
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            background-image: url(./static/img/righttop.png);
+        }
+
+        .right_bottom,
+        .right_bottomtow ,
+        .right_bottomthree{
+            width: 9.8rem;
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-size: 100%;
+        }
+
+        .right_bottom {
+            background-image: url(./static/img/rightbotton.png);
+            height: 13rem;
+        }
+
+        .right_bottomtow {
+            background-image: url(./static/img/rightdowntow.png);
+            height: 12rem;
+            
+        }
+        .right_bottomthree {
+            background-image: url(./static/img/supit.png);
+            background-position-x: 77%;
+            height: 12rem;
+            background-size: 790%;
+            background-position-y: 36%
+        }
+        .text_crente {
+            font-size: 30px;
+            font-family: Arial-BoldMT;
+            color: #FFFFFF;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            font-weight: bold;
+            top: 3.425rem;
+        }
+
+        .top_div {
+            top: -11.5rem;
+        }
+
+        .trend {
+            width: 3.1rem;
+            height: 0.4rem;
+            background-image: linear-gradient(90deg, #09E4A2 0%, #00A9FF 100%);
+            border-radius: 3px;
+            position: absolute;
+            top: 7.5rem;
+            left: 11rem;
+        }
+
+        .text_tera {
+            width: 21.3rem;
+            height: 5.1rem;
+            font-size: 18px;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 27px;
+            margin: 0 auto;
+            margin-top: -7.5rem;
+            z-index: 1;
+        }
+
+        .launch {
+            width: 9.4rem;
+            height: 3.7rem;
+            background: #FFFFFF;
+            border-radius: 41px;
+            border: none;
+            margin: 0 auto;
+        }
+
+        .circle_one {
+            width: 13.4rem;
+            height: 13.4rem;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.26);
+            position: absolute;
+            top: 62%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .circle_tow {
+            width: 11.3rem;
+            height: 11.3rem;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            color: #FFFFFF;
+            font-weight: bold;
+            border: 3px solid rgba(255, 255, 255, 0.26);
+            margin: 16px auto;
+        }
+        .iocn_a{
+            display: inline-block;
+            width: 3.7rem;
+            height: 3.7rem;
+            border-radius: 50%;
+            background-color: #19202B
+        }
+    </style>
+</head>
+<body
+    class="home page-template-default page page-id-105 groovy_menu_1-9-9 _masterslider _msp_version_3.2.14 elementor-default elementor-kit-622 elementor-page elementor-page-105 th-sticky-header loaded headhesive"
+    data-elementor-device-mode="desktop" style="background:#141924">
+
+    <header class="banner navbar navbar-default navbar-static-top dark-header headhesive--clone headhesive--stick"
+        role="banner" data-transparent-header="true">
+        <div class="container" style="max-width:1384px !important;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div id="logo">
+                    <a href="#">
+                        <img src="./static/img/logo2.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" style="height: 0px;">
+                <ul id="menu-groovy-menu-mega" class="nav navbar-nav">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-567"><a
+                            href="comingsoon.html">Pools</a></li>
+
+                    <li
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-539">
+                        <a class="dropdown-toggle"
+                            href="https://www.notion.so/defifactory/WikiDelta-0fcc7c0a81b0467f9ae82dca9c301c05">References<b
+                                class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-540">
+                                <a href="./coming.html">Whitepaper</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
+                                <a
+                                    href="https://www.notion.so/defifactory/Guide-748668d500c64f5caa14927c86bd1ccd">Guide</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-657">
+                                <a href="./coming.html">Github</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
+                                <a href="https://www.notion.so/defifactory/FAQ-b2b8b7c065b44fe996e09cfaef121ee5">FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="wrap" role="document">
+        <div class="content">
+            <div class="inner-container">
+                <section class="content-editor">
+                    <div data-elementor-type="wp-post" data-elementor-id="105" class="elementor elementor-105"
+                        data-elementor-settings="[]">
+                        <div class="elementor-inner">
+                            <div class="elementor-section-wrap">
+                                <section
+                                    class="elementor-section elementor-top-section elementor-element elementor-element-27ee92a1 elementor-reverse-mobile "
+                                    data-id="27ee92a1" data-element_type="section"
+                                    style="background: #141924;height: 65rem;">
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-row">
+                                            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6bb005d3"
+                                                data-id="6bb005d3" data-element_type="column">
+                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                    <div>
+                                                        <p class="elementor-icon-box-description"
+                                                            style="font-size: 36px; color: #fff;font-family: Futura-Bold;">
+                                                            Deri Protocol <br>
+                                                            the DeFi way to trade derivatives
+                                                        </p>
+                                                        <div style="background-image: linear-gradient(90deg, #09E4A2 0%, #00A9FF 100%);
+                                                        border-radius: 3px;width: 10.6rem;height: 0.4rem;"></div>
+                                                        <div style="margin-top: 5.7%;width: 39.8rem;height: 5rem;">
+                                                            <p class="elementor-icon-box-description" style="font-size: 24px;
+                                                            color: #FFFFFF;
+                                                            line-height: 40px;">
+                                                                Deri Protocol is a decentralized protocol to exchange
+                                                                risk
+                                                                exposures precisely and capital-efficiently
+                                                            </p>
+                                                        </div>
+                                                        <div style="margin-top:28%;font-size: 20px;">
+                                                            <a href="./comingsoon.html">
+                                                                <button style="width:13.8rem;height:4.4rem;border: 2px solid #FFFFFF;
+                                                                border-radius: 41px;background-color: #141924; color: #fff;">
+                                                                    WHITEPAPER
+                                                                </button>
+                                                            </a>
+                                                            <a href="./comingsoon.html">
+                                                                <button style="width:13.8rem;height:4.4rem;border:none;background-image: linear-gradient(90deg, #09D3AF 0%, #09B8C2 18%, #0965FF 100%);
+                                                                border-radius: 41px;margin-left: 5.7%; color: #fff;">
+                                                                    EXCHANGE
+                                                                </button>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-bde16d9"
+                                                data-id="bde16d9" data-element_type="column">
+                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                    <div class="">
+                                                        <div class="elementor-element elementor-element-09ab734 elementor-widget elementor-widget-image"
+                                                            data-id="09ab734" data-element_type="widget"
+                                                            data-widget_type="image.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="elementor-image">
+                                                                    <img width="1024" height="633"
+                                                                        src="./static/img/banner.png"
+                                                                        class="img-fluid attachment-large size-large jetpack-lazy-image jetpack-lazy-image--handled">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section
+                                    class="elementor-section elementor-top-section elementor-element elementor-element-1f34b64e elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                    data-id="1f34b64e" data-element_type="section" style="background-color: #19202B;"
+                                    data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;mountains&quot;}">
+
+                                    <div class=" elementor-column-gap-default" style="width: 1243px !important;
+                                    margin: 0 auto;">
+                                        <div class="elementor-row">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1f3dbcb6"
+                                                data-id="1f3dbcb6" data-element_type="column" style="
+                                             height: 30.3rem;">
+                                                <div class="elementor-column-wrap top_div elementor-element-populated">
+                                                    <div class="elementor-widget-wrap cardm">
+                                                        <div class="left_top"></div>
+                                                        <div class="right_top"></div>
+                                                        <div class="right_bottom"></div>
+                                                        <div class="text_crente">
+                                                            Liquidity Premining
+                                                        </div>
+                                                        <div class="trend" ></div>
+                                                        <div class="text_tera">
+                                                            <p style="color: #FFFFFF;">
+                                                                Stake USDT to harvest DERI
+                                                            </p>
+                                                        </div>
+                                                        <a href="https://ropsten.deri.finance/premining.html" style="margin: 0 auto;">
+                                                            <button class="launch">
+                                                                LAUNCH
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1f3dbcb6"
+                                                data-id="1f3dbcb6" data-element_type="column" style="
+                                        height: 30.3rem;">
+                                                <div class="elementor-column-wrap top_div elementor-element-populated">
+                                                    <div class="elementor-widget-wrap cardm" style="background: #1E49D3;
+                                                        border-radius: 30px 0 30px 0;width: 25rem;">
+                                                        <div class="left_top"></div>
+                                                        <div class="right_top"></div>
+                                                        <div class="right_bottomtow"></div>
+                                                        <div class="text_crente">
+                                                            Try Out
+                                                        </div>
+                                                        <div class="trend" style=""></div>
+                                                        <div class="text_tera">
+                                                            <p style="color: #FFFFFF;">
+                                                                Try out the trading and liquidity mining
+                                                                <br>
+                                                                with Deri Protocol in our Ropsten
+                                                                <br>
+                                                                testing liquidity pool
+                                                            </p>
+                                                        </div>
+                                                        <a href="https://ropsten.deri.finance" style="margin: 0 auto;">
+                                                            <button class="launch">
+                                                                LAUNCH
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1f3dbcb6"
+                                                data-id="1f3dbcb6" data-element_type="column" style="
+                                   height: 30.3rem;">
+                                                <div class="elementor-column-wrap top_div elementor-element-populated">
+                                                    <div class="elementor-widget-wrap cardm" style="background: #1E49D3;
+                                                        border-radius: 30px 0 30px 0;width: 25rem;">
+                                                        <div class="left_top"></div>
+                                                        <div class="right_top"></div>
+                                                        <div class="right_bottomthree"></div>
+                                                        <div class="text_crente">
+                                                            Exchange
+                                                        </div>
+                                                        <div class="trend"></div>
+                                                        <div class="circle_one">
+                                                            <div class="circle_tow">
+                                                                <div style="margin: 35px auto;">
+                                                                    coming<br>
+                                                                    soon
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section
+                                    class="elementor-section elementor-top-section elementor-element elementor-element-42042240 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                    data-id="42042240" data-element_type="section"
+                                    style="background-color: #19202B;padding: 0px 0px 100px 0px"
+                                    data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class=" elementor-column-gap-default" style="width: 1243px !important;
+                                    margin: 0 auto;">
+                                        <div class="elementor-row" style="margin-top: -9rem;">
+                                            <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2194209e"
+                                                data-id="2194209e" data-element_type="column">
+                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                    <div class="elementor-widget-wrap">
+                                                        <div class="elementor-element elementor-element-752d734d elementor-view-default elementor-position-top elementor-invisible elementor-widget elementor-widget-themo-service-block"
+                                                            data-id="752d734d" data-element_type="widget"
+                                                            data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:100}"
+                                                            data-widget_type="themo-service-block.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="th-service-block-w">
+                                                                    <div
+                                                                        class="elementor-icon-box-wrapper th-show-icon">
+                                                                        <div
+                                                                            class="elementor-icon-box-icon th-icon-size-xl">
+                                                                            <img src="./static/img/Completely On-Chain.png"
+                                                                                alt="">
+                                                                        </div>
+                                                                        <div class="elementor-icon-box-content"
+                                                                            style="margin-top: 20px;">
+                                                                            <h4 class="elementor-icon-box-title">
+                                                                                <span>Completely On-Chain</span>
+                                                                            </h4>
+                                                                            <p class="elementor-icon-box-description"
+                                                                                style="
+                                                                            color: #FFFFFF;">
+                                                                                Exchanging mechanism fully
+                                                                                implementedwithin Ethereum smart
+                                                                                contracts</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5b2ba825"
+                                                data-id="5b2ba825" data-element_type="column">
+                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                    <div class="elementor-widget-wrap">
+                                                        <div class="elementor-element elementor-element-6f6b0e26 elementor-view-default elementor-position-top elementor-invisible elementor-widget elementor-widget-themo-service-block"
+                                                            data-id="6f6b0e26" data-element_type="widget"
+                                                            data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:300}"
+                                                            data-widget_type="themo-service-block.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="th-service-block-w">
+                                                                    <div
+                                                                        class="elementor-icon-box-wrapper th-show-icon">
+                                                                        <div
+                                                                            class="elementor-icon-box-icon th-icon-size-xl">
+                                                                            <img src="./static/img/Real Derivatives.png"
+                                                                                alt="">
+                                                                        </div>
+                                                                        <div class="elementor-icon-box-content"
+                                                                            style="margin-top: 20px;">
+                                                                            <h4 class="elementor-icon-box-title">
+                                                                                <span>Real Derivatives</span>
+                                                                            </h4>
+                                                                            <p class="elementor-icon-box-description"
+                                                                                style="
+                                                                            color: #FFFFFF;">
+                                                                                Get risk exposures precisely and
+                                                                                capital-efficiently</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6ba69088"
+                                                data-id="6ba69088" data-element_type="column">
+                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                    <div class="elementor-widget-wrap">
+                                                        <div class="elementor-element elementor-element-376dc365 elementor-view-default elementor-position-top elementor-invisible elementor-widget elementor-widget-themo-service-block"
+                                                            data-id="376dc365" data-element_type="widget"
+                                                            data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}"
+                                                            data-widget_type="themo-service-block.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="th-service-block-w">
+                                                                    <div
+                                                                        class="elementor-icon-box-wrapper th-show-icon">
+                                                                        <div
+                                                                            class="elementor-icon-box-icon th-icon-size-xl">
+                                                                            <img src="./static/img/Composability.png"
+                                                                                alt="">
+                                                                        </div>
+                                                                        <div class="elementor-icon-box-content"
+                                                                            style="margin-top: 20px;">
+                                                                            <h4 class="elementor-icon-box-title">
+                                                                                <span>Composability</span>
+                                                                            </h4>
+                                                                            <p class="elementor-icon-box-description"
+                                                                                style="
+                                                                            color: #FFFFFF;">
+                                                                                Risk exposures tokenized as NFTs
+                                                                                to be utilized as lego blocks</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div><!-- /.inner-container -->
+        </div><!-- /.content -->
+    </div><!-- /.wrap -->
+
+    <div class="prefooter"></div>
+
+    <footer class="footer" role="contentinfo" style="height: 16.1rem;
+    position: relative;">
+        <div class="container" style="top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, 0%)">
+            <div class="footer-widgets row th-widget-area">
+                <div style="    position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;width: 120rem;">
+
+                    <section class="widget widget-social">
+                        <div class="widget-inner">
+                            <div class="soc-widget">
+                                <a target="_blank" class="iocn_a" href="mailto: service@deri.finance"><i
+                                        class="fa fa-envelope " style="color: #fff; margin-top: 13px;
+                                        margin-left: 11px;""></i></a>
+                                <a target="_blank" class="iocn_a"
+                                    href="https://twitter.com/DeriFinance"><i class="fa fa-twitter"  style="color: #fff;margin-top: 13px;
+                                    margin-left: 11px;"></i></a>
+                                <a
+                                    target="_blank" class="iocn_a" href="https://medium.com/@derifinance"><i
+                                        class="fa fa-medium"  style="color: #fff;margin-top: 13px;
+                                        margin-left: 11px;"></i></a>
+                                
+                                <a 
+                                target="_blank" class="iocn_a" href="https://github.com/deri-finance"><i
+                                    class="fa fa-github"  style="color: #fff;margin-top: 13px;
+                                    margin-left: 11px;"></i></a>
+                                <a target="_blank" class="iocn_a" style="position: relative;
+                                top: 10px;"
+                                href="https://www.facebook.com/finance.Deri/">
+                                <svg style="position: relative;
+                                top: 13px;" t="1609837263909" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4371" width="32" height="32"><path d="M512 0C229.052632 0 0 229.052632 0 512s229.052632 512 512 512 512-229.052632 512-512S794.947368 0 512 0z m122.745263 512h-79.386947v269.473684h-117.921684V512H377.263158v-92.833684h60.173474v-56.643369c0-74.698105 33.684211-119.996632 127.514947-119.996631h79.386947v92.833684h-48.128c-36.109474 0-38.480842 13.608421-38.480842 36.217263v45.298526H646.736842L634.718316 512z" fill="#ffffff" p-id="4372"></path></svg>
+                            </a>
+                            <a
+                            target="_blank" style="position: relative;
+                            top: 10px;" class="iocn_a" href="https://t.me/DeriFinanceAnn">
+                            <svg style="position: relative;
+                            top: 13px;" t="1609836018185" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2820" width="32" height="32"><path d="M512 16C238 16 16 238 16 512s222 496 496 496 496-222 496-496S786 16 512 16z m243.6 339.8l-81.4 383.6c-6 27.2-22.2 33.8-44.8 21l-124-91.4-59.8 57.6c-6.6 6.6-12.2 12.2-25 12.2l8.8-126.2 229.8-207.6c10-8.8-2.2-13.8-15.4-5l-284 178.8-122.4-38.2c-26.6-8.4-27.2-26.6 5.6-39.4l478.2-184.4c22.2-8 41.6 5.4 34.4 39z" fill="#ffffff" p-id="2821"></path></svg>
+                            </a>
+                                
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+                <div class="footer-area-2 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                </div>
+                <div class="footer-area-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
