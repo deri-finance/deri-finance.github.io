@@ -130,8 +130,8 @@
     <meta name="generator"
         content="Powered by Slider Revolution 6.2.2 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
     <!-- End Jetpack Open Graph Tags -->
-    <link rel="icon" href="favicon.ico" sizes="32x32">
-    <link rel="icon" href="favicon.ico" sizes="192x192">
+    <link rel="icon" href="./favicon.ico" sizes="32x32">
+    <link rel="icon" href="./favicon.ico" sizes="192x192">
     <link rel="apple-touch-icon" href="favicon.ico">
     <meta name="msapplication-TileImage" content="favicon.ico">
 
@@ -163,8 +163,12 @@
         #logo img {
             max-height: 30px;
             width: auto;
+            
         }
-
+        #logo{
+            width: 6.9rem;
+            height: 2rem;
+        }
         .navbar .navbar-nav {
             margin-top: 15px;
         }
@@ -684,7 +688,7 @@
                                     <div class="elementor-container elementor-column-gap-default">
                                         <div class="elementor-row">
                                             <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6bb005d3"
-                                                data-id="6bb005d3" data-element_type="column">
+                                                data-id="6bb005d3" data-element_type="column" >
                                                 <div class="elementor-column-wrap elementor-element-populated">
                                                     <div>
                                                         <p class="elementor-icon-box-description"
@@ -721,17 +725,18 @@
                                                 </div>
                                             </div>
                                             <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-bde16d9"
-                                                data-id="bde16d9" data-element_type="column">
+                                                data-id="bde16d9" data-element_type="column" style="margin-left: 4%;">
                                                 <div class="elementor-column-wrap elementor-element-populated">
                                                     <div class="">
                                                         <div class="elementor-element elementor-element-09ab734 elementor-widget elementor-widget-image"
                                                             data-id="09ab734" data-element_type="widget"
                                                             data-widget_type="image.default">
                                                             <div class="elementor-widget-container">
-                                                                <div class="elementor-image">
-                                                                    <img width="1024" height="633"
+                                                                <div class="elementor-image" id='animation' style="width: 600px;
+                                                                height: 510px;">
+                                                                    <!-- <img width="1024" height="633"
                                                                         src="./static/img/banner.png"
-                                                                        class="img-fluid attachment-large size-large jetpack-lazy-image jetpack-lazy-image--handled">
+                                                                        class="img-fluid attachment-large size-large jetpack-lazy-image jetpack-lazy-image--handled"> -->
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -762,11 +767,11 @@
                                                         </div>
                                                         <div class="trend" ></div>
                                                         <div class="text_tera">
-                                                            <p style="color: #FFFFFF;">
+                                                            <p style="color: #FFFFFF;font-size: 20px;">
                                                                 Stake USDT to harvest DERI
                                                             </p>
                                                         </div>
-                                                        <a href="https://ropsten.deri.finance/premining.html" style="margin: 0 auto;">
+                                                        <a href="https://ropsten.deri.finance/premining.html" style="z-index: 1;margin: 0 auto;color: #1E49D3;">
                                                             <button class="launch">
                                                                 LAUNCH
                                                             </button>
@@ -788,7 +793,7 @@
                                                         </div>
                                                         <div class="trend" style=""></div>
                                                         <div class="text_tera">
-                                                            <p style="color: #FFFFFF;">
+                                                            <p style="color: #FFFFFF;font-size: 20px;">
                                                                 Try out the trading and liquidity mining
                                                                 <br>
                                                                 with Deri Protocol in our Ropsten
@@ -796,7 +801,7 @@
                                                                 testing liquidity pool
                                                             </p>
                                                         </div>
-                                                        <a href="https://ropsten.deri.finance" style="margin: 0 auto;">
+                                                        <a href="https://ropsten.deri.finance" style="margin: 0 auto;z-index: 1;color: #1E49D3;">
                                                             <button class="launch">
                                                                 LAUNCH
                                                             </button>
@@ -961,7 +966,6 @@
         </div><!-- /.content -->
     </div><!-- /.wrap -->
 
-    <div class="prefooter"></div>
 
     <footer class="footer" role="contentinfo" style="height: 16.1rem;
     position: relative;">
@@ -980,7 +984,7 @@
                             <div class="soc-widget">
                                 <a target="_blank" class="iocn_a" href="mailto: service@deri.finance"><i
                                         class="fa fa-envelope " style="color: #fff; margin-top: 13px;
-                                        margin-left: 11px;""></i></a>
+                                        margin-left: 11px;"></i></a>
                                 <a target="_blank" class="iocn_a"
                                     href="https://twitter.com/DeriFinance"><i class="fa fa-twitter"  style="color: #fff;margin-top: 13px;
                                     margin-left: 11px;"></i></a>
@@ -1018,6 +1022,16 @@
             </div>
         </div>
     </footer>
+    <script src="./static/js/lottie.js"></script>
+    <script>
+         var b = lottie.loadAnimation({
+            container: document.getElementById('animation'), // the dom element that will contain the animation
+            renderer: 'svg', //渲染出来的是什么格式
+            loop: true,  //循环播放
+            autoplay: true, //自动播放
+            path: './data.json' // the path to the animation json
+        });
+    </script>
 </body>
 
 </html>
