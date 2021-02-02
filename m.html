@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <title>Deri – The Derivative Exchange Protocol</title>
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <script>
+        (function (designWidth, maxWidth) {
+            var doc = document,
+                win = window,
+                docEl = doc.documentElement,
+                remStyle = document.createElement("style"),
+                tid;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                maxWidth = maxWidth || 540;
+                width > maxWidth && (width = maxWidth);
+                var rem = width * 100 / designWidth;
+                remStyle.innerHTML = 'html{font-size:' + rem + 'px;}';
+            }
+
+            if (docEl.firstElementChild) {
+                docEl.firstElementChild.appendChild(remStyle);
+            } else {
+                var wrap = doc.createElement("div");
+                wrap.appendChild(remStyle);
+                doc.write(wrap.innerHTML);
+                wrap = null;
+            }
+            //要等 wiewport 设置好后才能执行 refreshRem，不然 refreshRem 会执行2次；
+            refreshRem();
+
+            win.addEventListener("resize", function () {
+                clearTimeout(tid); //防止执行两次
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+
+            win.addEventListener("pageshow", function (e) {
+                if (e.persisted) { // 浏览器后退的时候重新计算
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            if (doc.readyState === "complete") {
+                doc.body.style.fontSize = "16px";
+            } else {
+                doc.addEventListener("DOMContentLoaded", function (e) {
+                    doc.body.style.fontSize = "16px";
+                }, false);
+            }
+        })(750, 750);
+    </script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="box">
+        <div class="nav">
+            <div class="login">
+                <img src="./img/logo2.png" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="title">
+                <p class="elementor-icon-box-description"
+                    style="font-size: 26px; color: #fff;font-family: Futura-Bold;">
+                    Deri Protocol
+                    the DeFi way to trade derivatives
+                </p>
+                <div class="grenhr"></div>
+                <div style="margin-top: 5.7%;">
+                    <p class="elementor-icon-box-description" style="font-size: 18px;
+                    color: #FFFFFF;
+                    ">
+                        Deri Protocol is a decentralized protocol to exchange
+                        risk
+                        exposures precisely and capital-efficiently
+                    </p>
+                </div>
+                <div style="margin-top:28%;font-size: 20px;">
+                    <a href="./deri_whitepaper.pdf">
+                        <button class="whitepaper">
+                            WHITEPAPER
+                        </button>
+                    </a>
+                    <a href="./comingsoon.html">
+                        <button class="exchange">
+                            EXCHANGE
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="anima">
+                    <div class="elementor-image" id='animation' style="width: 90%;
+                     height: 250px;">
+                    </div>
+                </div>
+                <div class="elementor-column-wrap top_div elementor-element-populated">
+                    <div class="elementor-widget-wrap cardm">
+                        <div class="left_top"></div>
+                        <div class="right_top"></div>
+                        <div class="right_bottom"></div>
+                        <div class="text_crente">
+                            Liquidity Premining
+                        </div>
+                        <div class="trend"></div>
+                        <div class="text_tera">
+                            <p style="color: #FFFFFF;font-size: 16px;">
+                                Stake USDT to harvest DERI
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <a href="https://ropsten.deri.finance/premining.html" style="z-index: 1;margin: 0 auto;">
+                                <button class="launch">
+                                    LAUNCH
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="elementor-column-wrap top_div elementor-element-populated">
+                    <div class="elementor-widget-wrap cardm">
+                        <div class="left_top"></div>
+                        <div class="right_top"></div>
+                        <div class="right_bottomtow"></div>
+                        <div class="text_crente">
+                            Try Out
+                        </div>
+                        <div class="trend"></div>
+                        <div class="text_tera">
+                            <p style="color: #FFFFFF;font-size: 16px;">
+                                Try out the trading and liquidity mining
+                                <br>
+                                with Deri Protocol in our Ropsten
+                                <br>
+                                testing liquidity pool
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <a href="https://ropsten.deri.finance" style="z-index: 1;margin: 0 auto;">
+                                <button class="launch">
+                                    LAUNCH
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="elementor-column-wrap top_div elementor-element-populated">
+                    <div class="elementor-widget-wrap cardm">
+                        <div class="left_top"></div>
+                        <div class="right_top"></div>
+                        <div class="right_bottomtow"></div>
+                        <div class="text_crente">
+                            Exchange
+                        </div>
+                        <div class="trend"></div>
+                        <div class="circle_one">
+                            <div class="circle_tow">
+                                <div style="margin: 35px auto;">
+                                    coming<br>
+                                    soon
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="icon_box">
+                    <div>
+                        <div>
+                            <div class="img">
+                                <img src="./img/Completely On-Chain.png" alt="">
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <h3 style="color: #fff;">
+                                    <span>Completely On-Chain</span>
+                                </h3>
+                                <p class="context" style=" color: #FFFFFF;">
+                                    Exchanging mechanism fully
+                                    implemented within Ethereum smart
+                                    contracts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon_box">
+                    <div>
+                        <div>
+                            <div class="img">
+                                <img src="./img/Real Derivatives.png" alt="">
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <h3 style="color: #fff;">
+                                    <span>Real Derivatives</span>
+                                </h3>
+                                <p class="context" style=" color: #FFFFFF;">
+                                    Get risk exposures precisely and
+                                    capital-efficiently</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon_box">
+                    <div>
+                        <div>
+                            <div class="img">
+                                <img src="./img/Composability.png" alt="">
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <h3 style="color: #fff;">
+                                    <span>Composability</span>
+                                </h3>
+                                <p class="context" style=" color: #FFFFFF;">
+                                    Risk exposures tokenized as NFTs
+                                    to be utilized as lego blocks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="elementor" style="margin-top: 20px;overflow: hidden;">
+                <div class="card_left">
+                    <div class="card_option option">
+                        <div class="text_ms">Liquidity Providers</div>
+                        <svg t="1612271415648" class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge down" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3089" width="20" height="20"><path d="M557.248 376.448L809.6 628.8a31.648 31.648 0 0 1-22.176 54.304 31.648 31.648 0 0 1-22.624-9.504l-252.8-252.8-252.8 252.8a31.648 31.648 0 0 1-54.304-22.176c0-8.864 3.648-16.864 9.504-22.624l252.352-252.352c11.584-11.584 27.584-18.752 45.248-18.752s33.664 7.168 45.248 18.752z" p-id="3090" fill="#ffffff"></path></svg>
+                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge up" t="1612271237951" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2126" width="20" height="20"><path d="M216.448 361.92L512 657.472l295.552-295.552a8 8 0 0 1 11.328 0l42.432 42.432a8 8 0 0 1 0 11.328l-299.84 299.776a70.016 70.016 0 0 1-98.112 0.832l-0.832-0.832-299.84-299.776a8 8 0 0 1 0-11.328l42.432-42.432a8 8 0 0 1 11.328 0z" p-id="2127" fill="#ffffff"></path></svg>
+                    </div>
+                    <div class="card_option">
+                        <div class="text_ms">Traders</div>
+                        <svg t="1612271415648" class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge down" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3089" width="20" height="20"><path d="M557.248 376.448L809.6 628.8a31.648 31.648 0 0 1-22.176 54.304 31.648 31.648 0 0 1-22.624-9.504l-252.8-252.8-252.8 252.8a31.648 31.648 0 0 1-54.304-22.176c0-8.864 3.648-16.864 9.504-22.624l252.352-252.352c11.584-11.584 27.584-18.752 45.248-18.752s33.664 7.168 45.248 18.752z" p-id="3090" fill="#ffffff"></path></svg>
+                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge up" t="1612271237951" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2126" width="20" height="20"><path d="M216.448 361.92L512 657.472l295.552-295.552a8 8 0 0 1 11.328 0l42.432 42.432a8 8 0 0 1 0 11.328l-299.84 299.776a70.016 70.016 0 0 1-98.112 0.832l-0.832-0.832-299.84-299.776a8 8 0 0 1 0-11.328l42.432-42.432a8 8 0 0 1 11.328 0z" p-id="2127" fill="#ffffff"></path></svg>
+                    </div>
+                    <div class="card_option">
+                        <div class="text_ms">Arbitragers</div>
+                        <svg t="1612271415648" class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge down" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3089" width="20" height="20"><path d="M557.248 376.448L809.6 628.8a31.648 31.648 0 0 1-22.176 54.304 31.648 31.648 0 0 1-22.624-9.504l-252.8-252.8-252.8 252.8a31.648 31.648 0 0 1-54.304-22.176c0-8.864 3.648-16.864 9.504-22.624l252.352-252.352c11.584-11.584 27.584-18.752 45.248-18.752s33.664 7.168 45.248 18.752z" p-id="3090" fill="#ffffff"></path></svg>
+                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge up" t="1612271237951" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2126" width="20" height="20"><path d="M216.448 361.92L512 657.472l295.552-295.552a8 8 0 0 1 11.328 0l42.432 42.432a8 8 0 0 1 0 11.328l-299.84 299.776a70.016 70.016 0 0 1-98.112 0.832l-0.832-0.832-299.84-299.776a8 8 0 0 1 0-11.328l42.432-42.432a8 8 0 0 1 11.328 0z" p-id="2127" fill="#ffffff"></path></svg>
+                    </div>
+                    <div class="card_option">
+                        <div class="text_ms">Position liquidators</div>
+                        <svg t="1612271415648" class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge down" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3089" width="20" height="20"><path d="M557.248 376.448L809.6 628.8a31.648 31.648 0 0 1-22.176 54.304 31.648 31.648 0 0 1-22.624-9.504l-252.8-252.8-252.8 252.8a31.648 31.648 0 0 1-54.304-22.176c0-8.864 3.648-16.864 9.504-22.624l252.352-252.352c11.584-11.584 27.584-18.752 45.248-18.752s33.664 7.168 45.248 18.752z" p-id="3090" fill="#ffffff"></path></svg>
+                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge up" t="1612271237951" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2126" width="20" height="20"><path d="M216.448 361.92L512 657.472l295.552-295.552a8 8 0 0 1 11.328 0l42.432 42.432a8 8 0 0 1 0 11.328l-299.84 299.776a70.016 70.016 0 0 1-98.112 0.832l-0.832-0.832-299.84-299.776a8 8 0 0 1 0-11.328l42.432-42.432a8 8 0 0 1 11.328 0z" p-id="2127" fill="#ffffff"></path></svg>
+                    </div>
+                </div>
+                <div class="card_right">
+                    <div class="right_box">
+                        <div class="tabpane">
+                            <div class="tit">Liquidity Providers</div>
+                            <div class="textm">Liquidity providers provide liquidity to the pools to gain transaction fee, funding fee and DERI award etc.</div>
+                        </div>
+                        <img src="./img/Liquidity Providers.png" alt="">
+                    </div>
+                    <div class="right_box animation">
+                        <div class="tabpane">
+                            <div class="tit">Traders</div>
+                            <div class="textm">With Deri Protocol, traders are able to acquire the targeted risk exposures precisely and capital-efficiently.</div>
+                        </div>
+                        <img src="./img/Traders.png" alt="">
+                    </div>
+                    <div class="right_box animation">
+                        <div class="tabpane">
+                            <div class="tit">Arbitragers</div>
+                            <div class="textm">Arbitragers are a special type of traders, which are induced by funding fee arbitrage to balance the two sides of long and short positions.</div>
+                        </div>
+                        <img src="./img/Arbitragers.png" alt="">
+                    </div>
+                    <div class="right_box animation">
+                        <div class="tabpane">
+                            <div class="tit">Position liquidators</div>
+                            <div class="textm">When a position is breaching liquidation line, a liquidator can pay the gas to liquidate the position and share part of the position’s remaining margin as award.</div>
+                        </div>
+                        <img src="./img/Position liquidators.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="soc-widget">
+                <a target="_blank" class="iocn_a" href="mailto: service@deri.finance">
+                    <svg t="1612272905740" class="icon" viewBox="0 0 1325 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3941" width="32" height="32"><path d="M1264.941176 165.888c0 34.755765-11.023059 68.065882-32.948705 99.809882-22.046118 31.683765-49.392941 58.789647-82.100706 81.317647L835.282824 561.995294c-4.517647 3.072-13.974588 9.938824-28.611765 20.118588a1419.143529 1419.143529 0 0 1-36.261647 25.178353c-9.637647 6.384941-21.383529 13.492706-34.936471 21.684706a199.378824 199.378824 0 0 1-38.550588 17.769412 108.001882 108.001882 0 0 1-33.611294 5.903059h-1.445647a106.616471 106.616471 0 0 1-33.611294-5.903059 205.040941 205.040941 0 0 1-38.550589-17.829647 635.482353 635.482353 0 0 1-34.93647-21.624471c-9.637647-6.324706-21.865412-14.817882-36.321883-25.178353l-28.551529-20.118588c-40.658824-28.310588-99.568941-68.427294-176.188235-120.771765C236.965647 388.939294 191.006118 357.677176 175.887059 346.955294c-27.828706-18.552471-54.031059-43.971765-78.607059-76.318118C72.583529 238.531765 60.235294 208.233412 60.235294 180.525176c0-34.334118 9.336471-62.945882 27.888941-85.895529C106.616471 71.619765 133.240471 60.235294 167.695059 60.235294h989.665882c29.093647 0 54.332235 10.360471 75.595294 30.960941 21.383529 20.720941 31.924706 45.598118 31.924706 74.691765z m0 194.499765V885.458824c0 29.033412-10.541176 53.910588-31.503058 74.691764a104.207059 104.207059 0 0 1-75.896471 30.960941H167.936c-29.515294 0-54.814118-10.420706-75.896471-30.960941a100.231529 100.231529 0 0 1-31.563294-74.691764V360.387765c19.696941 21.624471 42.465882 40.719059 67.885177 57.584941 162.153412 108.423529 273.648941 184.621176 334.185412 228.171294 25.6 18.492235 46.200471 33.008941 62.162823 43.248941 15.841882 10.360471 37.044706 21.082353 63.548235 31.683765 26.503529 10.842353 51.079529 16.143059 73.908706 16.143059h1.505883c22.889412 0 47.465412-5.421176 73.968941-16.143059 26.503529-10.842353 47.585882-21.443765 63.548235-31.683765 15.781647-10.24 36.562824-24.696471 62.162824-43.248941 76.197647-54.211765 187.813647-130.409412 334.787764-228.171294 25.178353-17.287529 47.585882-36.442353 66.861177-57.584941z" p-id="3942" fill="#ffffff"></path></svg>
+                </a>
+                <a target="_blank" class="iocn_a"
+                    href="https://twitter.com/DeriFinance">
+                    <svg t="1612273029711" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4870" width="32" height="32"><path d="M923.2 289.6c0 354.4-232.8 609.6-575.2 620.8-144.8 11.2-244-32.8-332.8-99.2 99.2 11.2 232.8-21.6 298.4-88.8-99.2 0-155.2-56-188-132h88.8C125.6 556.8 58.4 490.4 58.4 380c21.6 11.2 44 21.6 88.8 21.6-77.6-44-121.6-188-66.4-276.8 99.2 110.4 220.8 210.4 421.6 220.8-56-220.8 232.8-332.8 354.4-188 56-11.2 88.8-32.8 132-56-11.2 56-44 88.8-88.8 110.4 44 0 77.6-11.2 110.4-32.8-10.4 44-54.4 88.8-87.2 110.4z" fill="#ffffff" p-id="4871"></path></svg>
+                </a>
+                <a
+                    target="_blank" class="iocn_a" href="https://medium.com/@derifinance">
+                    <svg t="1612273063364" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5638" width="32" height="32"><path d="M342.4 249.6v668.8c0 19.2-9.6 35.2-28.8 35.2-6.4 0-12.8-3.2-19.2-3.2L28.8 816c-16-6.4-28.8-28.8-28.8-44.8V118.4c0-12.8 6.4-28.8 22.4-28.8 9.6 3.2 16 6.4 25.6 9.6l294.4 150.4c-3.2-3.2 0 0 0 0z m35.2 57.6l304 496-304-153.6V307.2z m646.4 9.6v601.6c0 19.2-9.6 32-28.8 32-9.6 0-19.2-3.2-25.6-6.4l-252.8-124.8L1024 316.8z m-3.2-67.2c0 3.2-294.4 483.2-316.8 518.4l-224-361.6 185.6-300.8c6.4-9.6 19.2-16 28.8-16 6.4 0 9.6 0 16 3.2l310.4 153.6v3.2z" p-id="5639" fill="#ffffff"></path></svg>
+                </a>
+                
+                <a 
+                target="_blank" class="iocn_a" href="https://github.com/deri-finance">
+                    <svg t="1612273107969" class="icon" viewBox="0 0 1049 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6578" width="32" height="32"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z" fill="#ffffff" p-id="6579"></path><path d="M199.040177 753.571326c-0.869171 2.607513-5.215026 3.476684-8.691711 1.738342s-6.084198-5.215026-4.345855-7.82254c0.869171-2.607513 5.215026-3.476684 8.691711-1.738342s5.215026 5.215026 4.345855 7.82254z m-6.953369-4.345856M219.900283 777.038945c-2.607513 2.607513-7.82254 0.869171-10.430053-2.607514-3.476684-3.476684-4.345855-8.691711-1.738342-11.299224 2.607513-2.607513 6.953369-0.869171 10.430053 2.607514 3.476684 4.345855 4.345855 9.560882 1.738342 11.299224z m-5.215026-5.215027M240.760389 807.459932c-3.476684 2.607513-8.691711 0-11.299224-4.345855-3.476684-4.345855-3.476684-10.430053 0-12.168395 3.476684-2.607513 8.691711 0 11.299224 4.345855 3.476684 4.345855 3.476684 9.560882 0 12.168395z m0 0M269.443034 837.011749c-2.607513 3.476684-8.691711 2.607513-13.906737-1.738342-4.345855-4.345855-6.084198-10.430053-2.607513-13.037566 2.607513-3.476684 8.691711-2.607513 13.906737 1.738342 4.345855 3.476684 5.215026 9.560882 2.607513 13.037566z m0 0M308.555733 853.526c-0.869171 4.345855-6.953369 6.084198-13.037566 4.345855-6.084198-1.738342-9.560882-6.953369-8.691711-10.430053 0.869171-4.345855 6.953369-6.084198 13.037566-4.345855 6.084198 1.738342 9.560882 6.084198 8.691711 10.430053z m0 0M351.145116 857.002684c0 4.345855-5.215026 7.82254-11.299224 7.82254-6.084198 0-11.299224-3.476684-11.299224-7.82254s5.215026-7.82254 11.299224-7.82254c6.084198 0 11.299224 3.476684 11.299224 7.82254z m0 0M391.126986 850.049315c0.869171 4.345855-3.476684 8.691711-9.560882 9.560882-6.084198 0.869171-11.299224-1.738342-12.168395-6.084197-0.869171-4.345855 3.476684-8.691711 9.560881-9.560882 6.084198-0.869171 11.299224 1.738342 12.168396 6.084197z m0 0" fill="#ffffff" p-id="6580"></path></svg>
+                </a>
+                <a target="_blank" class="iocn_a" 
+                href="https://www.facebook.com/finance.Deri/">
+                <svg  t="1609837263909" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4371" width="32" height="32"><path d="M512 0C229.052632 0 0 229.052632 0 512s229.052632 512 512 512 512-229.052632 512-512S794.947368 0 512 0z m122.745263 512h-79.386947v269.473684h-117.921684V512H377.263158v-92.833684h60.173474v-56.643369c0-74.698105 33.684211-119.996632 127.514947-119.996631h79.386947v92.833684h-48.128c-36.109474 0-38.480842 13.608421-38.480842 36.217263v45.298526H646.736842L634.718316 512z" fill="#ffffff" p-id="4372"></path></svg>
+                </a>
+                <a
+                target="_blank"  class="iocn_a" href="https://t.me/DeriFinance">
+                <svg  t="1609836018185" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2820" width="32" height="32"><path d="M512 16C238 16 16 238 16 512s222 496 496 496 496-222 496-496S786 16 512 16z m243.6 339.8l-81.4 383.6c-6 27.2-22.2 33.8-44.8 21l-124-91.4-59.8 57.6c-6.6 6.6-12.2 12.2-25 12.2l8.8-126.2 229.8-207.6c10-8.8-2.2-13.8-15.4-5l-284 178.8-122.4-38.2c-26.6-8.4-27.2-26.6 5.6-39.4l478.2-184.4c22.2-8 41.6 5.4 34.4 39z" fill="#ffffff" p-id="2821"></path></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="./js/lottie.js"></script>
+    <script>
+        var b = lottie.loadAnimation({
+            container: document.getElementById('animation'), // the dom element that will contain the animation
+            renderer: 'svg', //渲染出来的是什么格式
+            loop: true,  //循环播放
+            autoplay: true, //自动播放
+            path: './data.json' // the path to the animation json
+        });
+    </script>
+    <script>
+        let li = $('.right_box');
+        let option = $('.card_option');
+        option.hover(function(){
+            let index = $(this).index()
+            option.eq(index).addClass('option').siblings().removeClass("option");
+            li.eq(index).removeClass("animation").siblings().addClass("animation");
+        })
+        function ScreenWidth() {      //获取屏幕尺寸，判断PC端或移动端
+        if (/phone|pad|pod|iPhone|iPod|ios|iPad|Android|Fennec|BlackBerry|Mobile|IEMobile|MQQBrowser|JUC|Fennec|WosBrowser|BrowserNG|WebOS|Symbian|Windows Phone/i.test(navigator.userAgent)) {
+        //如果是移动端，则跳转到移动端对应的页面；否则，跳转到PC端对应的页面
+                window.location.href = 'https://deri.finance/m.html';
+            } else {
+                window.location.href = 'https://deri.finance/';
+            }
+        }
+    </script>
+</body>
+
+</html>
