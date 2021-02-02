@@ -1,59 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
     <title>Deri – The Derivative Exchange Protocol</title>
     <link rel="icon" href="favicon.ico" sizes="32x32">
-    <script>
-        (function (designWidth, maxWidth) {
-            var doc = document,
-                win = window,
-                docEl = doc.documentElement,
-                remStyle = document.createElement("style"),
-                tid;
-
-            function refreshRem() {
-                var width = docEl.getBoundingClientRect().width;
-                maxWidth = maxWidth || 540;
-                width > maxWidth && (width = maxWidth);
-                var rem = width * 100 / designWidth;
-                remStyle.innerHTML = 'html{font-size:' + rem + 'px;}';
-            }
-
-            if (docEl.firstElementChild) {
-                docEl.firstElementChild.appendChild(remStyle);
-            } else {
-                var wrap = doc.createElement("div");
-                wrap.appendChild(remStyle);
-                doc.write(wrap.innerHTML);
-                wrap = null;
-            }
-            //要等 wiewport 设置好后才能执行 refreshRem，不然 refreshRem 会执行2次；
-            refreshRem();
-
-            win.addEventListener("resize", function () {
-                clearTimeout(tid); //防止执行两次
-                tid = setTimeout(refreshRem, 300);
-            }, false);
-
-            win.addEventListener("pageshow", function (e) {
-                if (e.persisted) { // 浏览器后退的时候重新计算
-                    clearTimeout(tid);
-                    tid = setTimeout(refreshRem, 300);
-                }
-            }, false);
-
-            if (doc.readyState === "complete") {
-                doc.body.style.fontSize = "16px";
-            } else {
-                doc.addEventListener("DOMContentLoaded", function (e) {
-                    doc.body.style.fontSize = "16px";
-                }, false);
-            }
-        })(750, 750);
-    </script>
+  
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 </head>
@@ -330,11 +282,13 @@
         })
         function ScreenWidth() {      //获取屏幕尺寸，判断PC端或移动端
         if (/phone|pad|pod|iPhone|iPod|ios|iPad|Android|Fennec|BlackBerry|Mobile|IEMobile|MQQBrowser|JUC|Fennec|WosBrowser|BrowserNG|WebOS|Symbian|Windows Phone/i.test(navigator.userAgent)) {
-        //如果是移动端，则跳转到移动端对应的页面；否则，跳转到PC端对应的页面
-                window.location.href = 'https://deri.finance/m.html';
-            } else {
-                window.location.href = 'https://deri.finance/';
-            }
+        
+            }else{
+                window.location.href = 'https://deri.finance';
+            } 
+        }
+        window.onload  = function(){
+            ScreenWidth()
         }
     </script>
 </body>
