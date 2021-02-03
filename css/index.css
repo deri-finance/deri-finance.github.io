@@ -60,9 +60,6 @@ a {
 .box .bar ul li {
   margin-top: 20px;
 }
-.box .bar ul li:hover {
-  background-color: #141924;
-}
 .box .title {
   margin-top: 50px;
   margin-left: 20px;
