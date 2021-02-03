@@ -15,6 +15,29 @@
             <div class="login">
                 <img src="./img/logo2.png" alt="">
             </div>
+            <div class="references">
+                <button class="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+        <div class="bar">
+            <ul>
+                <li>
+                    <a href="./deri_whitepaper.pdf">Whitepaper</a>
+                </li>
+                <li>
+                    <a href="https://www.notion.so/Guide-5f1e53d6b2224118a132061a27d05927">Guide</a>
+                </li>
+                <li>
+                    <a href="https://github.com/deri-finance/">Github</a>
+                </li>
+                <li>
+                    <a href="https://www.notion.so/FAQ-1199bc91074b48d0ba5bcc21daf0920a">FAQ</a>
+                </li>
+            </ul>
         </div>
         <div class="content">
             <div class="title">
@@ -264,6 +287,18 @@
     <script>
         let li = $('.right_box');
         let option = $('.card_option');
+        let button = $('.button');
+        button.on('click',function(){
+            if($('.bar').css('display') == 'none'){
+                $('.bar').css({
+                    display : 'block'
+                })
+            }else{
+                $('.bar').css({
+                    display : 'none'
+                })
+            }
+        })
         option.hover(function(){
             let index = $(this).index()
             option.eq(index).addClass('option').siblings().removeClass("option");

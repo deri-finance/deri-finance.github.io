@@ -979,16 +979,6 @@
     </footer>
     <script src="./static/js/lottie.js"></script>
     <script>
-        
-         var b = lottie.loadAnimation({
-            container: document.getElementById('animation'), // the dom element that will contain the animation
-            renderer: 'svg', //渲染出来的是什么格式
-            loop: true,  //循环播放
-            autoplay: true, //自动播放
-            path: './data.json' // the path to the animation json
-        });
-    </script>
-    <script>
         let li = $('.right_box');
         let option = $('.card_option');
         option.hover(function(){
@@ -1006,6 +996,17 @@
             ScreenWidth()
         }
     </script>
+    <script>
+        
+         var b = lottie.loadAnimation({
+            container: document.getElementById('animation'), // the dom element that will contain the animation
+            renderer: 'svg', //渲染出来的是什么格式
+            loop: true,  //循环播放
+            autoplay: true, //自动播放
+            path: './data.json' // the path to the animation json
+        });
+    </script>
+    
     
 </body>
 
