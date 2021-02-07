@@ -62,7 +62,7 @@
             
         }
         #logo{
-            width: 6.9rem;
+            width: 17.9rem;
             height: 2rem;
         }
         .navbar .navbar-nav {
@@ -517,6 +517,24 @@
             background-color: #19202B
         }
     </style>
+    <style>
+        header{
+            height: 80px;
+        }
+        nav{
+            height: 80px;
+        }
+        .bar{
+            width: 50px;
+            height: 4px;
+            background: linear-gradient(90deg, #09E4A2 0%, #00A9FF 100%);
+            border-radius: 3px;
+            margin: 12px auto;
+          }
+        #usederi{
+            margin-left: 70px;
+        }
+    </style>
 </head>
 <body
     class="home page-template-default page page-id-105 groovy_menu_1-9-9 _masterslider _msp_version_3.2.14 elementor-default elementor-kit-622 elementor-page elementor-page-105 th-sticky-header loaded headhesive"
@@ -532,18 +550,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <div id="logo">
+                <div id="logo" style="margin-top: 24px;">
                     <a href="#">
                         <img src="./static/img/logo2.png" alt="">
                     </a>
+                    <a href="https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Deri-v1.0.pdf">
+                        <img src="./static/img/peckshield.png" alt="" style="margin-left:27px">
+                    </a>
                 </div>
             </div>
-            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" style="height: 0px;">
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" style="margin-top:8px;">
                 <ul id="menu-groovy-menu-mega" class="nav navbar-nav">
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
+                        <a href="https://deri.finance">Home</a>
+                        <div class="bar"></div>
+                    </li>
                     <li
                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-539">
                         <a class="dropdown-toggle"
-                            href="https://www.notion.so/Deri-Reference-2e8bcbd429614625aa9a6c4a8b2d510a">References<b
+                            href="https://www.notion.so/Deri-Reference-2e8bcbd429614625aa9a6c4a8b2d510a" style="color: #747474 !important;">References<b
                                 class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-540">
@@ -556,14 +581,19 @@
                                 <a
                                     href="https://www.notion.so/Guide-5f1e53d6b2224118a132061a27d05927">Guide</a>
                             </li>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-657">
-                                <a href="https://github.com/deri-finance/">Github</a>
-                            </li>
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
-                                <a href="https://www.notion.so/FAQ-1199bc91074b48d0ba5bcc21daf0920a">FAQ</a>
+                                <a
+                                    href="https://github.com/deri-finance/">Github</a>
                             </li>
+                           
                         </ul>
                     </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
+                        <a href="https://www.notion.so/FAQ-1199bc91074b48d0ba5bcc21daf0920a" style="color: #747474 !important; ">FAQ</a>
+                    </li>
+                    <a href="https://premining.deri.finance" id = 'usederi'>
+                        <img src="./static/img/usederi.png" alt="" style="margin-top:6px">
+                    </a>
                 </ul>
             </nav>
         </div>
@@ -657,12 +687,12 @@
                                                         <div class="right_top"></div>
                                                         <div class="right_bottom"></div>
                                                         <div class="text_crente">
-                                                            Liquidity Premining
+                                                            Premining & TVL Race
                                                         </div>
                                                         <div class="trend" ></div>
                                                         <div class="text_tera">
                                                             <p style="color: #FFFFFF;font-size: 20px;">
-                                                                Stake USDT to harvest DERI
+                                                                Join the TVL Race to harvest premining DERI and win finish-line awards
                                                             </p>
                                                         </div>
                                                         <a href="https://premining.deri.finance" style="z-index: 1;margin: 0 auto;color: #1E49D3;">
@@ -688,11 +718,7 @@
                                                         <div class="trend" style=""></div>
                                                         <div class="text_tera">
                                                             <p style="color: #FFFFFF;font-size: 20px;">
-                                                                Try out the trading and liquidity mining
-                                                                <br>
-                                                                with Deri Protocol in our Ropsten
-                                                                <br>
-                                                                testing liquidity pool
+                                                                Try out trading & liquidity mining on our testnet pools
                                                             </p>
                                                         </div>
                                                         <a href="https://ropsten.deri.finance" style="margin: 0 auto;z-index: 1;color: #1E49D3;">
@@ -741,7 +767,7 @@
                                         <div class="elementor-row" style="margin-top: -9rem;">
                                             <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2194209e"
                                                 data-id="2194209e" data-element_type="column">
-                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                <div class="elementor-column-wrap elementor-element-populated" style="padding: 50px 0px 40px 0px;">
                                                     <div class="elementor-widget-wrap">
                                                         <div class="elementor-element elementor-element-752d734d elementor-view-default elementor-position-top elementor-invisible elementor-widget elementor-widget-themo-service-block"
                                                             data-id="752d734d" data-element_type="widget"
@@ -779,7 +805,7 @@
                                             </div>
                                             <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5b2ba825"
                                                 data-id="5b2ba825" data-element_type="column">
-                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                <div class="elementor-column-wrap elementor-element-populated" style="padding: 50px 0px 40px 0px;">
                                                     <div class="elementor-widget-wrap">
                                                         <div class="elementor-element elementor-element-6f6b0e26 elementor-view-default elementor-position-top elementor-invisible elementor-widget elementor-widget-themo-service-block"
                                                             data-id="6f6b0e26" data-element_type="widget"
@@ -814,7 +840,7 @@
                                             </div>
                                             <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6ba69088"
                                                 data-id="6ba69088" data-element_type="column">
-                                                <div class="elementor-column-wrap elementor-element-populated">
+                                                <div class="elementor-column-wrap elementor-element-populated" style="padding: 50px 0px 40px 0px;">
                                                     <div class="elementor-widget-wrap">
                                                         <div class="elementor-element elementor-element-376dc365 elementor-view-default elementor-position-top elementor-invisible elementor-widget elementor-widget-themo-service-block"
                                                             data-id="376dc365" data-element_type="widget"
@@ -839,6 +865,43 @@
                                                                             color: #FFFFFF;">
                                                                                 Risk exposures tokenized as NFTs
                                                                                 to be utilized as lego blocks</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6ba69088"
+                                                data-id="6ba69088" data-element_type="column">
+                                                <div class="elementor-column-wrap elementor-element-populated" style="padding: 50px 0px 40px 0px;">
+                                                    <div class="elementor-widget-wrap">
+                                                        <div class="elementor-element elementor-element-376dc365 elementor-view-default elementor-position-top elementor-invisible elementor-widget elementor-widget-themo-service-block"
+                                                            data-id="376dc365" data-element_type="widget"
+                                                            data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}"
+                                                            data-widget_type="themo-service-block.default">
+                                                            <div class="elementor-widget-container">
+                                                                <div class="th-service-block-w">
+                                                                    <div
+                                                                        class="elementor-icon-box-wrapper th-show-icon">
+                                                                        <div
+                                                                            class="elementor-icon-box-icon th-icon-size-xl">
+                                                                            <img src="./static/img/ethbscheco.png"
+                                                                                alt="">
+                                                                        </div>
+                                                                        <div class="elementor-icon-box-content"
+                                                                            style="margin-top: 20px;">
+                                                                            <h4 class="elementor-icon-box-title">
+                                                                                <span>ETH + BSC + HECO</span>
+                                                                            </h4>
+                                                                            <p class="elementor-icon-box-description"
+                                                                                style="
+                                                                            color: #FFFFFF;">
+                                                                               Three chains, one ecosystem
+                                                                            </p>
                                                                         </div>
                                                                     </div>
 
