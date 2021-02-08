@@ -2,7 +2,8 @@
 <!-- saved from url=(0014)about:internet -->
 <html class="js jetpack-lazy-images-js-enabled csspointerevents no-touchevents mediaqueries" lang="en-US">
 <!--<![endif]-->
-<head>
+<head >
+    <base target="_blank">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
@@ -534,12 +535,66 @@
         #usederi{
             margin-left: 70px;
         }
+        .modal_sushi{
+            width: 500px;
+            height: 236px;
+            background: #19202B;
+            border-radius: 30px;
+            border: 1px solid #283343;
+            color: #fff;
+            z-index: 999;
+            text-align: center;
+            display: none;
+            position: absolute;
+            
+            font-size: 20px;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .sushi_box{
+            width: 500px;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .Copybutton{
+            cursor: pointer;
+        }
+        .close{
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+        .sushibtn{
+            display: inline-block;
+            width:170px;
+            height:40px;
+            border: 2px solid #FFFFFF;
+            border-radius: 41px;
+            background-color: #141924; 
+            color: #fff;
+        }
+        #copyadderss{
+            opacity: 0;
+            position: absolute;
+        }
     </style>
 </head>
 <body
     class="home page-template-default page page-id-105 groovy_menu_1-9-9 _masterslider _msp_version_3.2.14 elementor-default elementor-kit-622 elementor-page elementor-page-105 th-sticky-header loaded headhesive"
     data-elementor-device-mode="desktop" style="background:#141924">
-
+    <div class="modal_sushi">
+        <div class="close" onclick="closemodal()">
+            <img src="./img/colse.png" alt="">
+          </div>
+        <div class="sushi_box">
+            <input id="copyadderss" type="text">
+            Deri contract address copied, go get DERI on Sushiswap!<br><br>
+            <a href="https://sushiswap.fi/swap" class="sushibtn"  style="text-decoration: none; color: #fff;">Go to Sushiswap </a> 
+        </div>
+        
+    </div>
     <header class="banner navbar navbar-default navbar-static-top dark-header headhesive--clone headhesive--stick"
         role="banner" data-transparent-header="true">
         <div class="" style="padding: 0 40px 0 40px;">
@@ -628,7 +683,9 @@
                                                             line-height: 40px;">
                                                                 Deri Protocol is a decentralized protocol to exchange
                                                                 risk
-                                                                exposures precisely and capital-efficiently
+                                                                exposures precisely and capital-efficiently<br>
+                                                                We are on <span onclick="copyText()" style="text-decoration: underline;color: #fff;cursor: pointer;"> SUSHI!</span> 
+                                                                
                                                             </p>
                                                         </div>
                                                         <div style="margin-top:28%;font-size: 20px;">
@@ -1036,6 +1093,19 @@
     </footer>
     <script src="./static/js/lottie.js"></script>
     <script>
+        function copyText(){
+            $('.modal_sushi').css({
+                display:'block'
+            })
+            $("#copyadderss").val('0xa487bf43cf3b10dffc97a9a744cbb7036965d3b9');
+            $("#copyadderss").select();
+            document.execCommand("copy") // 执行浏览器复制命令
+        }
+        function closemodal(){
+            $('.modal_sushi').css({
+                display:'none'
+            })
+        }
         let li = $('.right_box');
         let option = $('.card_option');
         option.hover(function(){
