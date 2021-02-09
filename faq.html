@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_blank">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" sizes="32x32">
+    <title>faq</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            position: absolute;
+            top:15%;
+            left:50%;
+            transform: translateX(-50%);
+        }
+        a{
+            color: rgba(55,53,47,0.4);
+        }
+        .faq{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .text{
+            margin-top: 30px;
+            margin-bottom: 30vh;
+        }
+        .title{
+            font-size: 30px;
+        }
+        .title_text{
+            margin-top: 10px;
+        }
+        .one{
+            margin-top: 30px;
+        }
+        .li{
+            margin-left: 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="faq">FAQ</div> 
+        <div class="text">
+            <div class="one">
+                <div class="title">How do I open an account?</div>
+                <div class="title_text">
+                    <span>
+                        You don't.<br><br>
+                        You just need to connect your ETH wallet to the Delta exchange via the webpage. <br><br>
+                        When you land on the website, it will check whether a supported wallet is installed on your browser. If yes, you will be asked to connect it. Otherwise, it guides you to a wallet website (e.g. <a href="https://metamask.io/">MetaMask</a> ).
+                    </span>
+                </div>
+            </div>
+            <div class="one">
+                <div class="title">Which wallets are supported?</div>
+                <div class="title_text">
+                    <span>
+                        For the time being:<br>
+                        <li class='li'><a href="https://metamask.io/">MetaMask</a> </li><br>
+                        We are working on supporting more.
+                    </span>
+                </div>
+            </div>
+            <div class="one">
+                <div class="title">How much gas is consumed to do things with Deri?</div>
+                <div class="title_text">
+                    <span>
+                        Deri protocol is reasonably gas-economic. Most of the actions cost around 100,000 gas per action. The most expensive action is trade-with-margin, a combined action of trade and post margin, that costs around 200,000 gas per action. <br><br>
+                        If you are to trade frequently, it is encouraged to post sufficient margin to your position (i.e. your pToken) and carry out "simple trades" without adding/removing margin every time, which would cost around 100,000 gas per trade.<br><br>
+                        If you do not have a clear sense about how much 100,000 gas is, this is for your reference: the minimum gas consumption of a single transaction on ETH blockchain is sending ETH, which costs 21,000 gas per transfer, while a common basic transaction like sending ERC20 token (e.g. USDT or DAI) costs around 40,000~60,000 gas. <b>That is, a single operation with Deri consumes only around twice as much gas as an simple transfer of ERC20 token.</b> 
+                    </span>
+                </div>
+            </div>
+            <div class="one">
+                <div class="title">What do I harvest for liquidity farming?</div>
+                <div class="title_text">
+                    <span>
+                        For the time being:<br>
+                        <li class='li'><b>Profits of the base token</b>  in which you provide liquidity. Please note that this part of return is not certain: there is a possibility of loss (i.e. impermanent loss). However, the probability of impermanent loss on Deri liquidity farming is much smaller than that of Uniswap due to the protection of arbitragers.
+                            <br>
+                            This part of yield is included in the increment of share value of the liquidity shares. You will get the profit when you withdraw liquidity from the pool. 
+                        </li><br>
+                        
+                        <li class='li'><b>Yield of DERI token</b>. DERIs, the protocol tokens are distributed to liquidity providers according to their liquidity contributions on a weekly basis. Unlike the base token profits, this part of yields is certain. It's proportional to the dollar value and the time length (i.e. timed value) of your liquidity contribution.
+                            
+                        </li><br>
+                    </span>
+                </div>
+            </div>
+            <div class="one">
+                <div class="title">Is the liquidity mining on Deri risk-free?</div>
+                <div class="title_text">
+                    <span>
+                        No, it is not. Liquidity mining on Deri pools are subject to the risk of impermanent loss. However, the probability of impermanent loss on Deri liquidity farming is much smaller than that of Uniswap due to the protection by arbitragers.<br><br>
+                        You might think of liquidity mining on Deri as investing in a low-risk fund with potentially very high profit, whereas those risk-free liquidity mining are like depositing your money into bank saving account.
+                    </span>
+                </div>
+            </div>
+            <div class="one">
+                <div class="title">Is Deri protocol working on layer1 or layer2?</div>
+                <div class="title_text">
+                    <span>
+                        As of now, Deri is working on layer 1. Meanwhile, we are working on the layer2 solution for Deri and  will roll out the layer2 version soon. Please stay tuned.
+                    </span>
+                </div>
+            </div>
+            <div class="one">
+                <div class="title">Is there a testnet for Deri protocol?</div>
+                <div class="title_text">
+                    <span>
+                        Yes, please go to <a href="http://ropsten.deri.finance">ropsten.deri.finance</a>for testing.  You may get testing tokens from the faucet webapge <a href="http://ropsten.deri.finance/faucet">ropsten.deri.finance/faucet</a>
+                    </span>
+                </div>
+            </div>
+            <div class="one">
+                <div class="title">How do I get the base tokens for trading?</div>
+                <div class="title_text">
+                    <span>
+                        Most of the pools of Deri Protocol use general tokens (e.g. stablecoins) as base token. Therefore you can get the base token with any of the methods below.<br>
+                        <ol>
+                            <li class='li'>Buy in DEX: For stablecoins, <a href="https://www.curve.fi/">curve.fi</a> is recommended. Otherwise, <a href="https://app.uniswap.org/#/swap"></a> uniswap would be of help.</li>
+                            <li class='li'>Buy in Centralized exchanges</li>
+                            <li class='li'>Borrow/Mint: For stablecoins like DAI, you can mint on <a href="https://oasis.app/">MakerDAO</a> </li><br>
+                        </ol> 
+                        We are working on supporting more.
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
