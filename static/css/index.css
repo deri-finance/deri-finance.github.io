@@ -92,4 +92,16 @@
     z-index: -1;
 }
 
-
+.investors,.partners{
+    color: #fff;
+    font-size: 24px;
+}
+.inv_img,.par_img{
+    margin-top: 31px;
+}
+.inv_img img,.par_img img{
+    margin-left: 21px;
+}
+.partners{
+    margin-top: 63px;
+}

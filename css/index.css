@@ -316,6 +316,20 @@ a {
   left: -857px !important;
   z-index: -1;
 }
+.box .inpa {
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #19202B;
+  margin-top: 5px;
+}
+.box .inpa .inv_img,
+.box .inpa .par_img {
+  text-align: center;
+  margin-top: 10px;
+}
+.box .inpa img {
+  width: 20.94rem;
+}
 .box .footer a {
   margin-left: 10px;
 }
