@@ -59,14 +59,14 @@
     </style>
 
     <style id="kirki-inline-styles">
-        #logo img {
-            max-height: 30px;
+        header .navbar-header  #logo img {
+            max-height: 40px !important;
             width: auto;
 
         }
 
         #logo {
-            width: 17.9rem;
+            width: 5.9rem;
             height: 2rem;
         }
 
@@ -543,7 +543,9 @@
         }
 
         #usederi {
-            margin-left: 70px;
+            position: absolute;
+            right: 25px;
+            top: 15px;
         }
 
         .modal_sushi {
@@ -633,24 +635,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <div id="logo">
+                <div id="logo" style="margin-top:5px">
                     <a href="#">
-                        <img src="./static/img/logo2.png" alt="">
+                        <img src="./img/logo_with_DERI.png" alt="">
                     </a>
-
                 </div>
             </div>
-            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" style="margin-top:8px;">
-                <ul id="menu-groovy-menu-mega" class="nav navbar-nav">
+            <!-- <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" style="margin-top:8px;"> -->
+                <ul id="menu-groovy-menu-mega" class="nav navbar-nav" style="float: none;margin-top: 15px !important;">
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
                         <a href="https://deri.finance">Home</a>
-                        <div class="bar"></div>
+                        
                     </li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
                         <a href="https://exchange.deri.finance/#/liquidity" style="color: #747474 !important;">Mining</a>
                     </li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
-                        <a href="https://exchange.deri.finance" style="color: #747474 !important;">Exchange</a>
+                        <a href="https://exchange.deri.finance" style="color: #747474 !important;">Trade</a>
                     </li>
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
                         <a href="https://governance.deri.finance" style="color: #747474 !important;">Governance</a>
@@ -661,8 +662,8 @@
                     <li
                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-539">
                         <a class="dropdown-toggle"
-                            href="#"
-                            style="color: #747474 !important;">References<b class="caret"></b></a>
+                            href="https://docs.deri.finance/"
+                            style="color: #747474 !important;">Docs<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-540">
                                 <a
@@ -674,10 +675,10 @@
                                     Audit</a>
                             </li>
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
-                                <a href="./faq.html">FAQ</a>
+                                <a href="https://docs.deri.finance/faq">FAQ</a>
                             </li>
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
-                                <a href="./guide.html">Guide</a>
+                                <a href="https://docs.deri.finance/">Guide</a>
                             </li>
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
                                 <a href="https://github.com/deri-finance/">Github</a>
@@ -691,11 +692,12 @@
                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-541">
                         <a href="./team.html" style="color: #747474 !important; ">Team</a>
                     </li>
-                    <a href="https://exchange.deri.finance" id='usederi'>
-                        <img src="./static/img/usederi.png" alt="" style="margin-top:6px">
-                    </a>
+                    
                 </ul>
-            </nav>
+                <a href="https://exchange.deri.finance" id='usederi'>
+                    <img src="./static/img/usederi.png" alt="" style="margin-top:6px">
+                </a>
+            <!-- </nav> -->
         </div>
     </header>
 
