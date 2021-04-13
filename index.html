@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><base target=_blank><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>deri</title><link rel=icon href=static/favicon.ico type=image/x-icon><link rel=stylesheet href=https://use.typekit.net/ibg8qxc.css><script type=text/javascript src=./static/charting_library/charting_library.min.js></script><link href=https://cdn.jsdelivr.net/gh/deri-finance/deri-finance.github.io@main/static/css/app.4dc64723c3cd17b5b961e52ead50c4d9.css rel=stylesheet></head><body><div id=app></div><script>function ScreenWidth() {      //获取屏幕尺寸，判断PC端或移动端
+<!DOCTYPE html><html><head><base target=_blank><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>deri</title><link rel=icon href=static/favicon.ico type=image/x-icon><link rel=stylesheet href=https://use.typekit.net/ibg8qxc.css><script type=text/javascript src=./static/charting_library/charting_library.min.js></script><link href=https://cdn.jsdelivr.net/gh/deri-finance/deri-finance.github.io@main/static/css/app.c7043e6b7456324ab324a2ae942eb896.css rel=stylesheet></head><body><div id=app></div><script>function ScreenWidth() {      //获取屏幕尺寸，判断PC端或移动端
     let url = window.location.href.split("/").slice(-1)[0]
     if (/phone|pad|pod|iPhone|iPod|ios|iPad|Android|Fennec|BlackBerry|Mobile|IEMobile|MQQBrowser|JUC|Fennec|WosBrowser|BrowserNG|WebOS|Symbian|Windows Phone/i.test(navigator.userAgent)) {
       //如果是移动端，则跳转到移动端对应的页面；否则，跳转到PC端对应的页面
@@ -9,7 +9,7 @@
       }
     } else {
       if (url.substr(0, 2) === 'm.') {
-        window.location.href = '/index#/' + url.substr(2, url.length-1);
+        window.location.href = '/index#/' + url.substr(2, url.length - 1);
       }
     }
   }
