@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+.setallowance {
+  background-color: #19202b !important;
+  height: 100vh;
+  color: #ffffff;
+  position: relative;
+  font-size: 0.18666667rem;
+}
+.setallowance .nav {
+  display: flex;
+  height: 1.06666667rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141924;
+}
+.setallowance .nav .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  margin-left: 0.42666667rem;
+}
+.setallowance .nav .logo img {
+  width: 1.69333333rem;
+  height: 0.49333333rem;
+}
+.setallowance .nav .connectw {
+  margin-right: 0.53333333rem;
+  font-size: 0.18666667rem;
+}
+.setallowance .nav .connectw .connect {
+  width: 2.4rem;
+  height: 0.53333333rem;
+  background: linear-gradient(90deg, #09D3AF 0%, #09B8C2 18%, #0965FF 100%);
+  border-radius: 0.54666667rem;
+  border: 0;
+  color: #fff;
+}
+.setallowance .container-fluid {
+  position: relative;
+}
+.setallowance .title {
+  width: 77%;
+  position: absolute;
+  top: 2.66666667rem;
+  left: 47.5%;
+  transform: translateX(-50%);
+}
+.setallowance .box {
+  width: 8.33333333rem;
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.setallowance .box input[type='radio'] {
+  color: black;
+}
+.setallowance .box .select_network {
+  margin-top: 0.13333333rem;
+}
+.setallowance .box .address #placeaddress {
+  border-radius: 6px;
+  width: 1.33333333rem;
+  height: 0.64rem;
+  font-size: 0.18666667rem;
+  padding: 0.08rem 0.16rem;
+}
+.setallowance .box .address button {
+  margin-left: 0.13333333rem;
+  background-image: linear-gradient(90deg, #09d3af 0%, #09b8c2 18%, #0965ff 100%);
+  border-radius: 0.32rem;
+  height: 0.64rem;
+  font-size: 0.18666667rem;
+  border: 0;
+  color: #fff;
+  width: 2.66666667rem;
+}
